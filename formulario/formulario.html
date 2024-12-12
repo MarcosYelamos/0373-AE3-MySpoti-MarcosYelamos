@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Miley Cyrus</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> <a href="../index.html">Inicio (Presentación del artista)</a></li>
+            <li> <a href="../discografia/discografia.html">Discografía de Miley Cyrus</a></li>
+            <li><a href="../album1/album1.html">Álbum Meet Miley Cyrus</a></li>
+            <li><a href="../album2/album2.html">Álbum Breakout</a></li>
+            <li><a href="../album3/album3.html">Album Can't Be Tamed</a></li>
+            <li><a href="./formulario.html">Formulario Miley Cyrus</a></li>
+        </ul>
+        <hr>
+    </nav>
+    <main>
+        <h1>Formulario Miley Cyrus</h1>
+        <form action="recepcion.php" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduze tu nombre"><br><br>
+
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="appelidos" name="apellidos" placeholder="Introduce tus apellidos"><br><br>
+
+            <label for="edad">Fecha de nacimiento</label>
+            <input type="date" id="edad" name="edad" placeholder="Introduce tu fecha de nacimiento"><br><br>
+
+            <label for="edad">Fecha de nacimiento</label>
+            <input type="date" id="edad" name="edad" placeholder="Introduce tu fecha de nacimiento"><br><br>
+
+            <fieldset>
+                <legend>Idioma</legend>
+                <label for="castellano">Castellano</label>
+                <input type="radio" id="castellano" name="idioma" value="Castellano">
+
+                <label for="catalan">Catalan</label>
+                <input type="radio" id="catalan" name="idioma" value="Catalan">
+
+                <label for="castellano">Chino</label>
+                <input type="radio" id="chino" name="idioma" value="Chino">
+            </fieldset>
+
+            <fieldset>
+                <legend>Nacionalidad</legend>
+                <label for="espanola">Española</label>
+                <input type="checkbox" id="espanola" name="nacionalidad" value="espanola">
+
+                <label for="francesa">Francesa</label>
+                <input type="checkbox" id="francesa" name="nacionalidad" value="francesa">
+
+                <label for="canadiense">Canadiense</label>
+                <input type="checkbox" id="canadiense" name="nacionalidad" value="canadiense">
+            </fieldset>
+
+            <label for="observaciones">Observaciones</label><br>
+                
+            <textarea name="observaciones" id="observaciones" placeholder="Introduce tus comentarios" cols="80" rows="4">
+            </textarea>
+            <br>
+            
+            <label for="ciudad">Ciudad</label><br>
+            <select name="ciudad" id="ciudad">
+                <option value="" disabled>Seleccione una ciudad</option>
+                <option value="Barcelona">Barcelona</option>
+                <option value="Madrid">Madrid</option>
+                <option value="Valencia">Valencia</option>
+                <option value="Sevilla">Sevilla</option>
+                <option value="Granada">Granada</option>
+                <option value="Murcia">Murcia</option>
+            </select>
+            <br>
+            <br>
+            <button type="submit">Enviar datos</button> 
+        </form>
+    </main>
+</body>
+</html>
